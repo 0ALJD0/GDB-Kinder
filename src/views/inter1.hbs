@@ -1,0 +1,41 @@
+<div class="container mt-5" style="width: 30%">
+    <div class="card mb-5">
+        <div class="card-header text-center">Registrar matricula pagada</div>
+        <div class="card-body">
+            <form action="/inter1" method="post" id="caja-registro">
+
+                
+                 <div class="input-group mb-3">
+                    <select name="ninio" id="ninio" class="form-select">
+                        <option value="0" selected disabled>
+                            Seleccione el niño
+                        </option>
+                        {{#each datos}}
+                            <option value="{{id}}">{{nombres}}
+                                </option>
+                        {{/each}}
+                    </select>
+                </div>
+                
+                
+                <div class="input-group mb-3">
+                    
+                    
+                    <input name = "precio" id= "precio " type="text" class="form-control" placeholder="Ingrese precio matricula" required>
+                </div>
+                
+                 <div class="text-center">
+                   <button
+                        type="submit"
+                        class="btn btn-primary"
+                        
+                    >
+                        Registrar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+

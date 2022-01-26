@@ -1,0 +1,114 @@
+<div class="container mt-5" style="width: 30%">
+    <div class="card mb-5">
+        <div class="card-header text-center">Registrar PADRE</div>
+        <div class="card-body">
+           
+            <form action="/inter4" method="post" id="caja-registro">
+             <div class="input-group mb-3">
+                    <select name="nacionalidad" id="nacionalidad" class="form-select">
+                        <option value="0" selected disabled>
+                            Seleccione la nacionalidad
+                        </option>
+                        {{#each nacionalidad}}
+                            <option value="{{id}}">{{nombre}}
+                                </option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <select name="genero" id="genero" class="form-select">
+                        <option value="0" selected disabled>
+                            Seleccione el género
+                        </option>
+                        {{#each genero}}
+                            <option value="{{id}}">{{nombre}}
+                                </option>
+                        {{/each}}
+                    </select>
+                </div>
+                
+                <div class="mb-3">
+                    <input
+                        maxlength="30"
+                        type="text"
+                        class="form-control"
+                        name="nombre"
+                        id="nombre"
+                        placeholder="Nombres" required
+                        autofocus
+                    />
+                    
+                </div>
+
+                <div class="mb-3">
+                    <input
+                        maxlength="30"
+                        type="text"
+                        class="form-control"
+                        name="apellido"
+                        id="apellido"
+                        placeholder="Apellidos"required
+                    />
+                    
+                </div>
+
+                <div class="mb-3">
+                    <input
+                        maxlength="10"
+                        class="form-control"
+                        type="text"
+                        name="cedula"
+                        id="cedula"
+                        placeholder="Cedula"required
+                    />
+                    
+                </div>
+
+                <div class="mb-3">
+                    <input
+                        maxlength="30"
+                        class="form-control"
+                        type="text"
+                        name="direccion"
+                        id="direccion"
+                        placeholder="Direccion"required
+                    />
+                    
+                </div>
+
+                <div class="mb-3">
+                    <input
+                        maxlength="10"
+                        class="form-control"
+                        type="text"
+                        name="telefono"
+                        id="telefono"
+                        placeholder="Telefono"required
+                    />
+                    
+                </div>
+
+                <div class="mb-3">
+                    <input
+                        maxlength="30"
+                        class="form-control"
+                        type="text"
+                        name="domicilio"
+                        id="domicilio"
+                        placeholder="Domicilio"required
+                    />
+                   
+                </div>
+                <div class="text-center">
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                        
+                    >
+                        Registrar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
